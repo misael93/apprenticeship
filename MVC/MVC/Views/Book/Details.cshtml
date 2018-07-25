@@ -1,0 +1,17 @@
+@using MVC.Models
+@model Book
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<h1>@Model.Name</h1>
+
+<h3>ID</h3>
+@Model.ID
+<h3>Author</h3>
+@Model.Author
+<h3>Price</h3>
+$@Model.Price
+<hr>
+@Html.ActionLink("Back to index", "Index", "Home", null, new {@class = "btn btn-success"})

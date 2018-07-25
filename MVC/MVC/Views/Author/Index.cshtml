@@ -1,0 +1,33 @@
+@using MVC.Models
+@model List<Author>
+
+@{
+    ViewData["Title"] = "Authors";
+}
+
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Details</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>@item.Name</td>
+            <td>@Html.ActionLink("Details", "Details", "Author", new {id = item.ID}, new {@class = "btn btn-info"})</td>
+            <td>@Html.ActionLink("Edit", "Edit", "Author", new {id = item.ID}, new {@class = "btn btn-success"})</td>
+            <td>@Html.ActionLink("Delete", "Delete", "Author", new {id = item.ID}, new {@class = "btn btn-danger"})</td>
+        </tr>
+    }
+    </tbody>
+</table>
+<hr>
+<p class="text-danger">@ViewData["message"]</p>
+@Html.ActionLink("Add author", "Create", "Author")

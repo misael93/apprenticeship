@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <input type="text" id="nombre" value="" placeholder="Nombre, hobbies">
+    <button type="button" onclick="buscar()">Buscar</button>
+    <button type="button" onclick="limpiar()">Limpiar</button>
+    <hr>
+    <div id="users-container"></div>
+    <template  class="user-template">
+      <label for="name"><b>Nombre: </b></label>
+      <span class="name"></span><br>
+      <label for="birth_year"><b>Birth year: </b></label>
+      <span class="birth_year"></span>
+      <br>
+      <label for="age"><b>Age: </b></label>
+      <span class="age"></span>
+      <br>
+      <label for=""><b>Email: </b></label>
+      <span class="email"></span>
+      <br>
+      <label for=""><b>Hobbies: </b></label>
+      <span class="hobbies"></span>
+      <hr>
+    </template>
+  </body>
+</html>

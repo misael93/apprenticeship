@@ -1,0 +1,38 @@
+header{
+  height:56px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding: 16px 16px 0 16px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.enlace {
+  text-decoration: none;
+
+}
+
+.container {
+    display: flex;
+}
+
+.buscador {
+  min-width: 250px;
+}
+
+header > * {
+  float: left;
+}
+body{
+  margin: 0px;
+}
+
+.logo {
+  max-height: 32px;
+}

@@ -1,0 +1,30 @@
+@using MVCTarea.Models
+@model List<Book>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td>
+            <td>@item.Author</td>
+            <td>$@item.Price</td>
+        </tr>
+    }
+    </tbody>
+</table>

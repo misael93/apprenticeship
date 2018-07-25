@@ -1,0 +1,170 @@
+html, body {
+    margin: 0;
+    font-family: "Helvetica";
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    background-color: #4b367c;
+    padding: 16px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 100;
+}
+
+header > * {
+    float: left;
+}
+
+.container {
+    display: flex;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.left {
+    width: 80%;
+}
+
+.logo {
+    max-height: 30px;
+}
+
+.menus {
+    padding: 0 10px;
+}
+
+.menus a, i {
+    padding: 0 15px;
+    color: white;
+    margin-top: 5px;
+}
+
+.menus i:hover {
+    
+}
+
+i, .pointer {
+    cursor: pointer;
+}
+
+.search-container {
+    padding: 5px;
+}
+
+.search-section {
+    display: flex; /*investigar alternativa*/
+    background: white;
+}
+
+.search-section button, input {
+    border: none;
+    background: white;
+    outline: none;
+}
+
+.search-bar {
+    width: 300px;
+}
+
+.login {
+    width: 20%;
+    text-align: right;
+}
+
+.left-panel {
+    width: 250px;
+    background-color: #17141f;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #b8b5c0;
+}
+
+.join {
+    height: auto;
+    background-color: #2c2541;
+    padding: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.join img {
+    max-height: 100px;
+}
+
+.content {
+    position: relative;
+    left: 250px;
+    top: 60px;
+    width: calc(100% - 250px);
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.content .find {
+    padding: 16px;
+    border: 1px;
+    border-style: solid;
+    border-color: #dad8de;
+}
+
+.btn {
+    background-color: #6441a4;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 8px;
+    cursor: pointer;
+}
+
+select {
+    padding: 5px;
+    color: #704fab;
+    border-color: #b19dd8;
+    border-radius: 5px;
+}
+
+.items-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+.item img {
+    max-height: 240px;
+}
+
+.item p {
+    margin: 0;
+}
+
+.item p:nth-child(2n + 1) {
+    font-size: 15px;
+    color: #6e6779;
+}
+
+.featured-item img {
+    max-height: 30px;
+}
+
+.featured {
+    height: 30px;
+}
+
+.featured-item {
+    height: inherit;
+}
